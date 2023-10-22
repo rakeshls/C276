@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "author": "Niyati Singh",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": -47.4, "left": 220.2, "attrs": {} },
+    { "type": "wokwi-tv", "id": "tv1", "top": -336, "left": -561.6, "attrs": {} },
+    {
+      "type": "wokwi-buzzer",
+      "id": "bz1",
+      "top": -237.6,
+      "left": 414.6,
+      "attrs": { "volume": "0.1" }
+    }
+  ],
+  "connections": [
+    [ "tv1:GND", "uno:GND.1", "black", [ "v20.29", "h-4.4" ] ],
+    [ "tv1:IN", "uno:7", "green", [ "v17.59", "h79.06" ] ],
+    [ "tv1:SYNC", "uno:9", "orange", [ "v12.85", "h35.64" ] ],
+    [ "bz1:2", "uno:11", "green", [ "v0" ] ],
+    [ "bz1:1", "uno:5V", "green", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}
